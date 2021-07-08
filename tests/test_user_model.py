@@ -31,7 +31,7 @@ class UserModelTestCase(unittest.TestCase):
         u = User(password='cat')
         self.assertTrue(u.verify_password('cat'))
         self.assertFalse(u.verify_password('dog'))
-        self.assertTrue(u.verify_password('dog'))
+      
 
     def test_password_salts_are_random(self):
         u = User(password='cat')
