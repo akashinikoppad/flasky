@@ -1,0 +1,7 @@
+name: Set up and Display Python's version 
+on: [push]
+jobs:
+  check-pythons-version:
+    runs-on: ubuntu-latest
+    steps:     
+      - run: echo  "GitHub actions works"
